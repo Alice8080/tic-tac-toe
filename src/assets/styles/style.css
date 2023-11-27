@@ -1,0 +1,127 @@
+body {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: 'Press Start 2P';
+}
+
+#game {
+    background-color: #303030;
+    border: 5px solid #3b3b3b;
+    border-radius: 12px;
+}
+
+#player {
+    width: fit-content;
+}
+
+.game {
+    margin: 50px auto 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.game__control {
+    width: 70%;
+}
+
+.game__score {
+    display: none;
+}
+
+.game__buttons {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#winner {
+    width: fit-content;
+}
+
+h1 {
+    font-size: 27px;
+    margin: 60px auto 0 auto;
+    width: 85%;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #086eb3;
+    transition: all .2s ease;
+    color: #fff;
+    border: unset;
+    font-size: 14px;
+    padding: 20px;
+    cursor: pointer;
+    font-family: 'Press Start 2P';
+    line-height: 1.5;
+    width: 200px;
+}
+
+.game__wrapper img {
+    object-fit: contain;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+
+button:hover {
+    background-color: #065c95;
+}
+
+button svg {
+    width: 35px;
+    height: 35px;
+}
+
+button:disabled {
+    opacity: .7;
+}
+
+button:disabled:hover {
+    background-color: #004f83;
+}
+
+.game__score {
+    margin-bottom: 40px;
+}
+
+#score {
+    background-color: #004f83;
+}
+
+.game__wrapper {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    padding: 30px;
+}
+
+.game__players,
+.game__difficulty,
+.game__first-move {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .game {
+        margin: 40px auto 0 auto;
+        flex-direction: column;
+    }
+
+    .game__control {
+        width: 100%;
+    }
+}
